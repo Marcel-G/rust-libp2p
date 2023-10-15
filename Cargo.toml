@@ -130,6 +130,8 @@ multihash = "0.19.1"
 # we import via `rust-multiaddr`.
 # This is expected to stay here until we move `libp2p-identity` to a separate repository which makes the dependency relationship more obvious.
 libp2p-identity = { path = "identity" }
+multiaddr = { git = "https://github.com/Marcel-G/rust-multiaddr", branch = "webrtc" }
+webrtc = { git = "https://github.com/webrtc-rs/webrtc", branch = "master" }
 
 [workspace.lints]
 rust.unreachable_pub = "warn"
